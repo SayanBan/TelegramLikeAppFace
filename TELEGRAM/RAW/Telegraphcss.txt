@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow|PT+Sans+Narrow|Red+Hat+Text&display=swap');
+/*
+    font-family: 'Red Hat Text', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Barlow', sans-serif;
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.app{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: 0.2s;
+    overflow: auto;
+}
+
+.header {
+    width: 100%;
+    height: 40pt; /*100px*/
+    background: rgb(81, 125, 162);
+    position: fixed;
+}
+
+.menu-button, .telegram-name, .lock-button, .search-button{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+.menu-button{
+    width: 15%;
+    height: 100%;
+    /*background: #987234;*/
+}
+
+.telegram-name{
+    width: 50%;
+    margin-left: 5%;
+    height: 100%;
+    justify-content: flex-start;
+    font-size: 28px;
+    /*background: #826341;*/
+}
+
+.lock-button{
+    width: 15%;
+    height: 100%;
+    /*background: #874568;*/
+}
+
+.search-button{
+    width: 15%;
+    height: 100%;
+    /*background: #127645;*/
+}
+
+.mdisplay{
+    /*background: #394573;*/
+    width: 100%;
+    height: 90.5vh;
+    /*height: 575px;*/
+    margin-top: 10vh;
+}
+
+.message{
+    width: 100%;
+    height: 90px;
+    /*background-color: #978345;*/
+}
+
+.mimage{
+    width: 20%;
+    height: 100%;
+    /*background: #fa09a8;*/
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aimage{
+    width: 85%;
+    height: 70%;
+    /*background-color: #983745;*/
+    border-radius: 50%;
+    background-image: url("https://api.sololearn.com/Uploads/Avatars/4991698.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mmessage{
+    width: 65%;
+    height: 100%;
+    /*background: #863451;*/
+    float: left;
+}
+
+.mdateamount{
+    width: 15%;
+    height: 100%;
+    /*background: #956087;*/
+    float: left;
+}
+
+.actual-name{
+    width: 100%;
+    height: 50%;
+    /*background: #7ad862;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: flex-end;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+}
+
+.actual-message{
+    width: 100%;
+    height: 40%;
+    /*background: #7fa782;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    color: rgb(140, 140, 140);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    /*font-family: 'PT Sans Narrow', sans-serif;*/
+}
+
+.date{
+    width: 100%;
+    height: 50%;
+    /*background: #7ad862;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(140, 140, 140);
+} 
+
+.nofmessage{
+    width: 100%;
+    height: 40%;
+    /*background: #7fa782;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.nofmessage span{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(198, 202, 205);
+    border-radius: 20px;
+}
+
+.side-nav{
+    position: absolute;
+    width: 90%;
+    height: 100vh;
+    margin-left: -100%;
+    transition: 0.5s;
+    background: #fff;
+}
+
+.profile-image{
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(rgba(150, 150, 150, 0.1), rgba(150, 150, 150, 0.5)) ,url("https://api.sololearn.com/Uploads/Avatars/4991698.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pimage-circle{
+    width: 90%;
+    height: 50%;
+    margin-left: 10%;
+    /*background: #893745;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.pimage-circle span{
+    width: 18%;
+    height: 75%;
+    background: #771271;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+}
+
+.name-number {
+    width: 100%;
+    height: 50%;
+    /*background: #987462;*/
+}
+
+.nname, .nnumber{
+    width: 80%;
+    margin-left: 10%;
+    height: 50%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+.nnumber{
+    align-items: flex-start;
+    font-size: 18px;
+}
+
+.options-menu{
+    width: 100%;
+    height: 70%;
+    /*background: #984756;*/
+    overflow: auto;
+}
+
+.opmain{
+    width: 100%;
+    height: 10%;
+    /*background-color: #872364;*/
+    margin-top: 20px;
+}
+
+.opicon, .opname{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opicon{
+    width: 30%;
+    height: 100%;
+    /*background: #ad0982;*/
+    font-size: 24px;
+}
+
+.opname{
+    width: 70%;
+    height: 100%;
+    /*background: #9fa867;*/
+    justify-content: flex-start;
+    font-size: 18px;
+}
